@@ -1,0 +1,62 @@
+.radio-styled {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+
+  span {
+    padding-left: 45px;
+    line-height: 30px;
+    font-size: 22px;
+    display: block;
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      left: 15px;
+      top: 15px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      transition: $transition;
+    }
+
+    &:after {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #fff;
+    }
+
+    &:before {
+      width: 30px;
+      height: 30px;
+      border: 7px solid rgba(#fff, .05);
+    }
+  }
+
+  input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    &:checked + span {
+      &:after {
+        background-color: $primary;
+        border-color: $primary;
+
+      }
+
+      &:before {
+        border-color: rgba($primary, .15);
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+}

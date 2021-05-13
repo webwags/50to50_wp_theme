@@ -1,0 +1,36 @@
+/*
+Theme Name: 50to50
+*/
+/*
+.response__footer {
+  background-color: grey;
+}
+.response__footer .container {
+  display: flex;
+  flex-direction: row;
+}
+.response__footer__left {
+  flex: 0 0 auto;  
+  display: flex;
+  align-items: center;
+
+  flex: 1 1 20%;
+}
+.response__footer__center {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;  
+
+  flex: 1 1 60%;
+}
+.response__footer__right {
+  display: flex;
+  justify-content: flex-end;
+
+  flex: 1 1 20%;
+}
+.response__footer .signup {
+  background-color: orange;
+  color: white;
+}
+*/

@@ -1,0 +1,42 @@
+body {
+  font-family: 'Graphik Web', Arial, sans-serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+button {
+  transition: $transition;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  transition: $transition;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.text-success {
+  color: $success;
+}

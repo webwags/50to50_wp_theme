@@ -1,0 +1,16 @@
+@mixin stretchFontSize ($minW, $maxW, $minF, $maxF) {
+  $widthDif: $maxW - $minW;
+  $fontDif: $maxF - $minF;
+
+  @media (min-width: #{$maxW + 1}px) {
+    font-size: #{$maxF}px;
+  }
+
+  @media (min-width: #{$minW}px) and (max-width: #{$maxW}px) {
+    font-size: calc(#{$minF}px + (100vw - #{$minW}px)/#{$widthDif}*#{$fontDif});
+  }
+
+  @media (max-width: #{$minW - 1}px) {
+    font-size: #{$minF}px;
+  }
+}
